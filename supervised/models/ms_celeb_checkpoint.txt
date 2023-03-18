@@ -1,0 +1,1 @@
+This is the directory where resnet ms_celeb checkpoint must reside for use in supervised model

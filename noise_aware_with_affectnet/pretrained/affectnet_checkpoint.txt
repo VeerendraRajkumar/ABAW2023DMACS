@@ -1,0 +1,1 @@
+This is the directory where affectnet checkpoint must reside for use in noise aware model

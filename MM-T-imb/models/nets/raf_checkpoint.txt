@@ -1,0 +1,1 @@
+This is the directory where resnet checkpoint trained on rafdb must reside for use in semi-supervised model
