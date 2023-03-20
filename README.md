@@ -11,6 +11,6 @@ semi-supervised and noisy label approach. Our approach using noise aware model h
 better than baseline model by 10.46% and semi supervised model has performed better than baseline
 model by 9.38% and the fully supervised model has performed better than the baseline by 9.34%.
 
-Link to the paper : 
+Link to the paper : http://arxiv.org/abs/2303.09785
 
 Link to checkpoints: https://drive.google.com/drive/folders/1qJVFG-QgpMCOLVovLwLF3mgYdBEi_ArX?usp=sharing
