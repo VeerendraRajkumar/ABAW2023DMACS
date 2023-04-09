@@ -2,6 +2,7 @@
 Aum Sri Sai Ram
 
 ABAW-5 for Expr, 2023
+By Veerendra Raj Kumar, Naveen Siva Kumar, Darshan Gera
 
 MutexMatch with threshold - mutexmatch with threshold class
 Here named as just MutexMatch
@@ -497,19 +498,19 @@ class MutexMatch:
                             continue
                         else:
                             train_model_state_dict[param] = checkpoint[key][param]
-                    train_model.load_state_dict(train_model_state_dict, strict=False)
                 elif 'eval_model' in key:
                     for param in checkpoint[key]:
                         if param in dont_load:
                             continue
                         else:
                             eval_model_state_dict[param] = checkpoint[key][param]
-                    eval_model.load_state_dict(eval_model_state_dict, strict=False)
                 else:
                     continue
                 self.print_fn(f"Check Point Loading: {key} is LOADED")
             else:
                 self.print_fn(f"Check Point Loading: {key} is **NOT** LOADED")
+        train_model.load_state_dict(train_model_state_dict, strict=False)
+        eval_model.load_state_dict(eval_model_state_dict, strict=False)
 
 if __name__ == "__main__":
     pass
